@@ -1,4 +1,4 @@
-#background {
+#backGround {
     margin: 0;
     height: 100%;
     width: 100%;
@@ -19,6 +19,7 @@
 }
 
 .emoticon {
+    height: 500px;
     text-align: center;
     margin: 150px 0 170px 0;
 }
@@ -32,4 +33,13 @@
 .simpleState {
     font-size: 35px;
     margin: 0;
+}
+
+#underBar {
+    background-color: #00BCD5;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 430px;
+    transition: 0.5s;
 }
