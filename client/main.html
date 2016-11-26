@@ -2,8 +2,13 @@
     <title>MiseMise</title>
 </head>
 
-<body id="backGround">
+<template name="layout">
 <div class="headInfo">
+    <div class="plusBtn">
+        <a href="{{pathFor 'search'}}">
+        <img src="/images/plus.png" width="70px" height="70px">
+        </a>
+    </div>
     <p class="headLocation">해운대구 좌동</p>
     <p class="headDate">2016-11-09 09:43 PM</p>
 </div>
@@ -23,7 +28,7 @@
 <img style="margin: 9px 8px 0 0" src="/images/info.png" width="60px" height="60px">
     </div>
 </div>
-</body>
+</template>
 
 <template name="underBar">
     <div id="underBar">

@@ -1,0 +1,32 @@
+
+.searchBar {
+    height: 120px;
+    background-color: #01BFA5;
+}
+.backBtn {
+    margin: 20px 0 20px 0;
+    height:80px;
+    width: 80px;
+    text-align: left;
+    float: left;
+}
+.searchDIv {
+    text-align: right;
+}
+.searchBax {
+    padding: 0;
+    height: 80px;
+    width: 90%;
+    color: white;
+    font-size: 50px;
+    background-color: #01BFA5;
+    border: 0;
+    margin: 20px 0 20px 0;
+}
+::-webkit-input-placeholder {
+    color: white;
+}
+
+.searchList {
+    background-color: white;
+}
