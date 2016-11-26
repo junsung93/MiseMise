@@ -18,3 +18,13 @@ Template.underBar.events({
         console.log("click");
     }
 });
+
+Template.date.helpers({
+    currentTime: function () {
+        var d = new Date();
+        var localD = d.toLocaleDateString();
+        var localT = d.toLocaleTimeString();
+
+        return localD + " " + localT;
+    }
+});

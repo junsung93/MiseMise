@@ -10,7 +10,7 @@
         </a>
     </div>
     <p class="headLocation">해운대구 좌동</p>
-    <p class="headDate">2016-11-09 09:43 PM</p>
+    {{>date}}
 </div>
 
 <div class="emoticon">
@@ -28,6 +28,10 @@
 <img style="margin: 9px 8px 0 0" src="/images/info.png" width="60px" height="60px">
     </div>
 </div>
+</template>
+
+<template name="date">
+    <p class="headDate">{{currentTime}}</p>
 </template>
 
 <template name="underBar">
