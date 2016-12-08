@@ -64,3 +64,15 @@ body {
     border-top: solid;
     text-align: right;
 }
+#underBarInfo {
+}
+
+#nowMise, #nowChoMise, #today, #tomorrowMorning, #tomorrowDay, #tomorrowNight {
+    margin-top: 15px;
+    margin-left: 5px;
+    font-size: 27px;
+    text-align: center;
+    float: left;
+    width: 16%;
+    height: 300px;
+}

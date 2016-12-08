@@ -21,13 +21,11 @@
     <p class="gradeState">보통</p>
     <p class="simpleState">지금은 외출하셔도 좋습니다</p>
 </div>
-
-<div id="underBar">
-    {{>underBar}}
+{{>underBar}}
     <div class="underInfo">
-<img style="margin: 9px 8px 0 0" src="/images/info.png" width="60px" height="60px">
+        <img style="margin: 9px 8px 0 0" src="/images/info.png" width="60px" height="60px">
     </div>
-</div>
+
 </template>
 
 <template name="date">
@@ -36,5 +34,37 @@
 
 <template name="underBar">
     <div id="underBar">
+        <div id="underBarInfo">
+            <div id="nowMise">
+                <p>지금<br>미세먼지</p>
+                <img id="emo" style="transition: 0.5s" src="/images/normal.png" width="80px" height="80px">
+                <p>수치정보</p>
+            </div>
+            <div id="nowChoMise">
+                <p>지금<br>초미세먼지</p>
+                <img id="emo" style="transition: 0.5s" src="/images/normal.png" width="80px" height="80px">
+                <p>수치정보</p>
+            </div>
+            <div id="today">
+                <p>오늘<br>저녁</p>
+                <img id="emo" style="transition: 0.5s" src="/images/normal.png" width="80px" height="80px">
+                <p>수치정보</p>
+            </div>
+            <div id="tomorrowMorning">
+                <p>내일<br>아침</p>
+                <img id="emo" style="transition: 0.5s" src="/images/normal.png" width="80px" height="80px">
+                <p>수치정보</p>
+            </div>
+            <div id="tomorrowDay">
+                <p>내일<br>점심</p>
+                <img id="emo" style="transition: 0.5s" src="/images/normal.png" width="80px" height="80px">
+                <p>수치정보</p>
+            </div>
+            <div id="tomorrowNight">
+                <p>내일<br>저녁</p>
+                <img id="emo" style="transition: 0.5s" src="/images/normal.png" width="80px" height="80px">
+                <p>수치정보</p>
+            </div>
+        </div>
     </div>
 </template>
