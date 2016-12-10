@@ -10,3 +10,8 @@ Router.route('/search', {
     name : 'search',
     template : 'search'
 });
+
+Router.route('/infoPage', {
+    name : 'infoPage',
+    template : 'infoPage'
+});

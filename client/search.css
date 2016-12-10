@@ -1,4 +1,3 @@
-
 .searchBar {
     height: 120px;
     background-color: #01BFA5;
@@ -13,7 +12,7 @@
 .searchDIv {
     text-align: right;
 }
-.searchBax {
+.searchBox {
     padding: 0;
     height: 80px;
     width: 90%;
@@ -29,4 +28,15 @@
 
 .searchList {
     background-color: white;
+    color: black;
+    font-size: 50px;
+}
+.searchUl {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li {
+    border-top: 1px solid lightgray;
+    border-bottom: 1px  solid lightgray;
 }
