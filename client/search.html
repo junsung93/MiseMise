@@ -6,13 +6,19 @@
             </a>
         </div>
         <div class="searchDIv">
-        <input class="searchBox" type="text" placeholder="동/읍/면 을 입력하세요">
+        <input id="searchBox" type="text" placeholder="동/읍/면 을 입력하세요">
+            <button id="searchBtn">Search</button>
         </div>
     </div>
     <div class="searchList">
         <ul class="searchUl">
-            <li>aafdsagfds</li>
-            <li>afadsfadsfadsfas</li>
+            {{#each dList}}
+                {{>dataList}}
+            {{/each}}
         </ul>
     </div>
+</template>
+
+<template name="dataList">
+    <li>{{>stationName}}</li>
 </template>

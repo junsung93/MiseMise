@@ -12,7 +12,7 @@
 .searchDIv {
     text-align: right;
 }
-.searchBox {
+#searchBox {
     padding: 0;
     height: 80px;
     width: 90%;

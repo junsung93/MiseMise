@@ -28,3 +28,26 @@ Template.date.helpers({
         return localD + " " + localT;
     }
 });
+
+var lat;
+var lon;
+
+navigator.geolocation.getCurrentPosition(function (pos) {
+    lat = pos.coords.latitude;
+    lon = pos.coords.longitude;
+    console.log('lat : ', lat);
+    console.log('lon : ', lon);
+});
+
+
+var CAI;
+
+Template.CAI.helpers({
+    getCAI : function () {
+        Meteor.call('getCAI', function (err,res) {
+            console.log(res);
+        });
+        console.log(CAI);
+        return CAI.res;
+    }
+});

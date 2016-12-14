@@ -65,7 +65,6 @@ body {
     text-align: right;
 }
 #underBarInfo {
-
 }
 
 #nowMise, #nowChoMise, #today, #tomorrowMorning, #tomorrowDay, #tomorrowNight {
@@ -76,12 +75,15 @@ body {
     text-align: center;
     float: left;
     width: 16%;
-    height: 347px;
+    height: 300px;
 }
 
 #detailInfo {
-
+    padding-left: 30px;
+    font-size: 35px;
+    clear: both;
+    width: 100%;
     border-top: 1px solid white;
-    height: 200px;
-    background-color: black;
+    border-bottom: 1px solid white;
+    height: 600px;
 }

@@ -19,7 +19,7 @@
 
 <div class="state">
     <p class="gradeState">보통</p>
-    <p class="simpleState">지금은 외출하셔도 좋습니다</p>
+    <p class="simpleState">{{>CAI}}</p>
 </div>
 {{>underBar}}
     <div class="underInfo">
@@ -69,7 +69,17 @@
             </div>
         </div>
         <div id="detailInfo">
-
+            <p>통합지수 (CAI)</p>
+            <p>미세먼지 (PM10)</p>
+            <p>초미세먼지 (PM2.5)</p>
+            <p>오존 (O3)</p>
+            <p>이산화질소 (NO2)</p>
+            <p>일산화탄소 (CO)</p>
+            <p>아황산가스 (SO2)</p>
         </div>
     </div>
+</template>
+
+<template name="CAI">
+    통합대기환경지수 : {{getCAI}}
 </template>
