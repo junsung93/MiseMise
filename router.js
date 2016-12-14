@@ -1,6 +1,3 @@
-/*Router.configure({
-    layoutTemplate: 'layout'
-});*/
 Router.route('/', {
     name : 'layout',
     template : 'layout'

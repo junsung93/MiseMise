@@ -10,7 +10,7 @@
         </a>
     </div>
     <p class="headLocation">해운대구 좌동</p>
-    {{>date}}
+    {{>dataTime}}
 </div>
 
 <div class="emoticon">
@@ -19,7 +19,7 @@
 
 <div class="state">
     <p class="gradeState">보통</p>
-    <p class="simpleState">{{>CAI}}</p>
+    <p class="simpleState">통합대기환경지수 : {{>CAI}}</p>
 </div>
 {{>underBar}}
     <div class="underInfo">
@@ -30,22 +30,18 @@
 
 </template>
 
-<template name="date">
-    <p class="headDate">{{currentTime}}</p>
-</template>
-
 <template name="underBar">
     <div id="underBar">
         <div id="underBarInfo">
             <div id="nowMise">
                 <p>지금<br>미세먼지</p>
                 <img id="emo" style="transition: 0.5s" src="/images/normal.png" width="80px" height="80px">
-                <p>수치정보</p>
+                <p>{{>PM10}}μg/㎥</p>
             </div>
             <div id="nowChoMise">
                 <p>지금<br>초미세먼지</p>
                 <img id="emo" style="transition: 0.5s" src="/images/normal.png" width="80px" height="80px">
-                <p>수치정보</p>
+                <p>{{>PM25}}μg/㎥</p>
             </div>
             <div id="today">
                 <p>오늘<br>저녁</p>
@@ -68,18 +64,39 @@
                 <p>수치정보</p>
             </div>
         </div>
-        <div id="detailInfo">
-            <p>통합지수 (CAI)</p>
-            <p>미세먼지 (PM10)</p>
-            <p>초미세먼지 (PM2.5)</p>
-            <p>오존 (O3)</p>
-            <p>이산화질소 (NO2)</p>
-            <p>일산화탄소 (CO)</p>
-            <p>아황산가스 (SO2)</p>
+        <div id="detailName">
+            <p>&nbsp;통합지수 (CAI) {{>CAI}} unit</p>
+            <p>&nbsp;미세먼지 (PM10) {{>PM10}}μg/㎥</p>
+            <p>&nbsp;초미세먼지 (PM2.5) {{>PM25}}μg/㎥</p>
+            <p>&nbsp;오존 (O3) {{>o3}} ppm</p>
+            <p>&nbsp;이산화질소 (NO2) {{>no2}} ppm</p>
+            <p>&nbsp;일산화탄소 (CO) {{>co}} ppm</p>
+            <p>&nbsp;아황산가스 (SO2) {{>so2}} ppm</p>
         </div>
     </div>
 </template>
 
+<template name="dataTime">
+    <p class="headDate">{{getDataTime}}</p>
+</template>
 <template name="CAI">
-    통합대기환경지수 : {{getCAI}}
+    {{getCAI}}
+</template>
+<template name="PM10">
+    {{getPM10}}
+</template>
+<template name="PM25">
+    {{getPM25}}
+</template>
+<template name="o3">
+    {{getO3Value}}
+</template>
+<template name="no2">
+    {{getNO2Value}}
+</template>
+<template name="co">
+    {{getCOValue}}
+</template>
+<template name="so2">
+    {{getSO2Value}}
 </template>
