@@ -1,9 +1,9 @@
 import {Meteor} from 'meteor/meteor';
 
-var miseUrl = 'http://openapi.airkorea.or.kr/openapi/services/rest/ArpltnInforInqireSvc/getMsrstnAcctoRltmMesureDnsty?stationName=%EC%A2%8C%EB%8F%99&dataTerm=daily&pageNo=1&numOfRows=1&ServiceKey=1z%2BI%2FV6zZr8u6fOijqsSCm6FaYf3%2Bsqan2ggljLql7E%2Fkdspr6uPC6sOaeSFDQ%2Bj%2Fip0gttTL4ONJy%2BW%2Fi0TaQ%3D%3D&ver=1.3&_returnType=json';
+var miseUrl = 'http://openapi.airkorea.or.kr/openapi/services/rest/ArpltnInforInqireSvc/getMsrstnAcctoRltmMesureDnsty?stationName=%EC%A2%8C%EB%8F%99&dataTerm=daily&pageNo=1&numOfRows=1&ServiceKey=eLjLjmBL%2BZOf41Jubc38O0WhKokYlqQnRuF055Vg7bTq8xWgpgh0YZrkrXxJt5HKUTTj%2F%2BvUVyoh%2BHMyMxf7Fw%3D%3D&ver=1.3&_returnType=json';
 var listUrl1 = 'http://openapi.airkorea.or.kr/openapi/services/rest/MsrstnInfoInqireSvc/getMsrstnList?addr=';
 var listUrl2 = '&pageNo=1&numOfRows=323&ServiceKey=eLjLjmBL%2BZOf41Jubc38O0WhKokYlqQnRuF055Vg7bTq8xWgpgh0YZrkrXxJt5HKUTTj%2F%2BvUVyoh%2BHMyMxf7Fw%3D%3D&_returnType=json';
-var addrUrl = 'http://openapi.airkorea.or.kr/openapi/services/rest/MsrstnInfoInqireSvc/getMsrstnList?serviceKey=1z%2BI%2FV6zZr8u6fOijqsSCm6FaYf3%2Bsqan2ggljLql7E%2Fkdspr6uPC6sOaeSFDQ%2Bj%2Fip0gttTL4ONJy%2BW%2Fi0TaQ%3D%3D&numOfRows=323&pageSize=323&pageNo=1&startPage=1&_returnType=json';
+var addrUrl = 'http://openapi.airkorea.or.kr/openapi/services/rest/MsrstnInfoInqireSvc/getMsrstnList?serviceKey=eLjLjmBL%2BZOf41Jubc38O0WhKokYlqQnRuF055Vg7bTq8xWgpgh0YZrkrXxJt5HKUTTj%2F%2BvUVyoh%2BHMyMxf7Fw%3D%3D&numOfRows=323&pageSize=323&pageNo=1&startPage=1&_returnType=json';
 
 Meteor.methods({
     "getCAI" : function () {
@@ -29,6 +29,24 @@ Meteor.methods({
     },
     "getSO2Value" : function () {
         return JSON.parse(HTTP.get(miseUrl).content).list[0].so2Value;
+    },
+    "getName" : function () {
+        return JSON.parse(HTTP.get(miseUrl).content).parm.stationName;
+    },
+    "geta" : function () {
+        return JSON.parse(HTTP.get(miseUrl).content).list[0];
+    }
+});
+
+Meteor.methods({
+    "getCAIGrade" : function () {
+        return JSON.parse(HTTP.get(miseUrl).content).list[0].khaiGrade;
+    },
+    "getPM10Grade" : function () {
+        return JSON.parse(HTTP.get(miseUrl).content).list[0].pm10Grade;
+    },
+    "getPM25Grade" : function () {
+        return JSON.parse(HTTP.get(miseUrl).content).list[0].pm25Grade;
     }
 });
 
@@ -43,11 +61,11 @@ Meteor.methods({
     }
 });
 
-Meteor.methods({
+/*Meteor.methods({
     "getTM" : function () {
         return JSON.parse(HTTP.get('https://apis.daum.net/local/geo/transcoord?apikey=d1840910eeeb691c5dcdf7a070fdeb7e&fromCoord=WGS84&y=35.189236&x=129.1650865&toCoord=TM&output=json').content)
     }
-});
+});*/
 
 Meteor.methods({
     "getList" : function (searchBox) {

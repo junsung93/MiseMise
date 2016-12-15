@@ -14,6 +14,7 @@ Template.search.events({
     }
 });
 
+/*
 Template.search.helpers({
     dList : function () {
         var list = Session.get('dataList');
@@ -21,3 +22,4 @@ Template.search.helpers({
         return list;
     }
 });
+*/

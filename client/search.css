@@ -15,7 +15,7 @@
 #searchBox {
     padding: 0;
     height: 80px;
-    width: 90%;
+    width: 75%;
     color: white;
     font-size: 50px;
     background-color: #01BFA5;
@@ -24,6 +24,13 @@
 }
 ::-webkit-input-placeholder {
     color: white;
+}
+
+#searchBtn {
+    background-color: #01BFA5;
+    color: white;
+    height: 80px;
+    font-size: 50px;
 }
 
 .searchList {

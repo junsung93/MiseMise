@@ -3,37 +3,28 @@
 </head>
 
 <template name="layout">
-<div class="headInfo">
-    <div class="tab">
-        Tab1
+    <div class="headInfo">
+        <div class="plusBtn">
+            <a href="{{pathFor 'search'}}">
+                <img src="/images/plus.png" width="70px" height="70px">
+            </a>
+        </div>
+        <p class="headLocation">{{>stationName}}</p>
+        {{>dataTime}}
     </div>
-    <div class="tab">
-        Tab2
-    </div>
-    <div class="plusBtn">
-        <a href="{{pathFor 'search'}}">
-        <img src="/images/plus.png" width="70px" height="70px">
-        </a>
-    </div>
-    <p class="headLocation">해운대구 좌동</p>
-    {{>dataTime}}
-</div>
 
-<div class="emoticon">
-    <img id="emo" style="transition: 0.5s" src="/images/normal.png" width="500px" height="500px">
-</div>
+    {{>CAIGrade}}
 
-<div class="state">
-    <p class="gradeState">보통</p>
-    <p class="simpleState">통합대기환경지수 : {{>CAI}}</p>
-</div>
-{{>underBar}}
+    <div class="state">
+        {{>state}}
+        <p class="simpleState">통합대기환경지수 : {{>CAI}}</p>
+    </div>
+    {{>underBar}}
     <div class="underInfo">
         <a href="{{pathFor 'infoPage'}}">
-        <img style="margin: 9px 8px 0 0" src="/images/info.png" width="60px" height="60px">
+            <img style="margin: 9px 8px 0 0" src="/images/info.png" width="60px" height="60px">
         </a>
     </div>
-
 </template>
 
 <template name="underBar">
@@ -41,12 +32,12 @@
         <div id="underBarInfo">
             <div id="nowMise">
                 <p>지금<br>미세먼지</p>
-                <img id="emo" style="transition: 0.5s" src="/images/normal.png" width="80px" height="80px">
+                {{>PM10Grade}}
                 <p>{{>PM10}}μg/㎥</p>
             </div>
             <div id="nowChoMise">
                 <p>지금<br>초미세먼지</p>
-                <img id="emo" style="transition: 0.5s" src="/images/normal.png" width="80px" height="80px">
+                {{>PM25Grade}}
                 <p>{{>PM25}}μg/㎥</p>
             </div>
             <div id="today">
@@ -79,6 +70,15 @@
             <p>&nbsp;일산화탄소 (CO) {{>co}} ppm</p>
             <p>&nbsp;아황산가스 (SO2) {{>so2}} ppm</p>
         </div>
+        <div id="stationInfo">
+            <p>측정소 이름 : {{>stationName}}</p>
+            <p>PM2.5 측정소 이름 : {{>stationName}}</p>
+            <p>업데이트 시간 : {{>dataTime}}</p>
+        </div>
+        <div id="source">
+            본 자료는 한국환경공단(에어코리아)에서 제공하는<br/>
+            실시간 관측 자료이며 실제 대기농도 수치와 다를 수 있습니다.
+        </div>
     </div>
 </template>
 
@@ -105,4 +105,23 @@
 </template>
 <template name="so2">
     {{getSO2Value}}
+</template>
+<template name="stationName">
+    {{getName}}
+</template>
+
+<template name="state">
+    <p class="gradeState">{{getState}}</p>
+</template>
+
+<template name="CAIGrade">
+    <div class="emoticon">
+        <img id="emo" style="transition: 0.5s" src={{getCAIGrade}} width="500px" height="500px">
+    </div>
+</template>
+<template name="PM10Grade">
+    <img id="emo" style="transition: 0.5s" src={{getPM10Grade}} width="80px" height="80px">
+</template>
+<template name="PM25Grade">
+    <img id="emo" style="transition: 0.5s" src={{getPM25Grade}} width="80px" height="80px">
 </template>

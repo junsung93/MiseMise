@@ -9,18 +9,9 @@ body {
 .headInfo {
     text-align: center;
 }
-.tab {
-    background-color: white;
-    color: black;
-    font-size: 50px;
-    height: 80px;
-    width: 250px;
-    float: left;
-    border-left: 1px solid lightgray;
-    border-top: 1px solid lightgray;
-    border-right: 1px solid lightgray;
-}
+
 .plusBtn {
+    margin: 20px 20px 0 0;
     text-align: right;
 }
 .headLocation {
@@ -81,6 +72,7 @@ body {
 }
 
 #detailName {
+    text-align: center;
     transition: 0.5s;
     overflow: hidden;
     font-size: 35px;
@@ -89,4 +81,18 @@ body {
     border-top: 1px solid white;
     border-bottom: 1px solid white;
     height: 0;
+}
+#stationInfo {
+    text-align: center;
+    transition: 0.5s;
+    overflow: hidden;
+    font-size: 25px;
+    height: 0;
+    border-bottom: 1px solid white;
+}
+#source {
+    text-align: center;
+    font-size: 20px;
+    overflow: hidden;
+    height:0;
 }
