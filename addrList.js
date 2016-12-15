@@ -1,0 +1,1 @@
+addrList = new Mongo.Collection('addrList');

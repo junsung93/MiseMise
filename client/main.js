@@ -27,8 +27,10 @@ var lon;
 navigator.geolocation.getCurrentPosition(function (pos) {
     lat = pos.coords.latitude;
     lon = pos.coords.longitude;
-    console.log('lat : ', lat);
-    console.log('lon : ', lon);
+    Session.set('getLat',lat);
+    Session.set('getLon',lon);
+    console.log(Session.get('getLat'));
+    console.log(Session.get('getLon'));
 });
 
 
