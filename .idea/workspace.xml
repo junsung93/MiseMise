@@ -3,12 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="23a87b60-e364-441f-a7eb-0b8af2b29eb9" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/main.css" afterPath="$PROJECT_DIR$/client/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/main.html" afterPath="$PROJECT_DIR$/client/main.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/main.js" afterPath="$PROJECT_DIR$/client/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/search.css" afterPath="$PROJECT_DIR$/client/search.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/search.html" afterPath="$PROJECT_DIR$/client/search.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/search.js" afterPath="$PROJECT_DIR$/client/search.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/main.js" afterPath="$PROJECT_DIR$/server/main.js" />
     </list>
     <ignored path="MiseMise.iws" />
@@ -54,11 +48,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/main.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="247">
-                  <caret line="13" column="68" selection-start-line="13" selection-start-column="68" selection-end-line="13" selection-end-column="68" />
+                <state relative-caret-position="456">
+                  <caret line="24" column="3" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
                   <folding>
                     <element signature="e#0#43#0" expanded="true" />
                   </folding>
@@ -76,11 +70,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+          <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/server/main.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1007">
-                  <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+                <state relative-caret-position="571">
+                  <caret line="35" column="3" selection-start-line="35" selection-start-column="3" selection-end-line="35" selection-end-column="3" />
                   <folding />
                 </state>
               </provider>
@@ -90,7 +84,7 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="main.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="main.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/main.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="494">
@@ -102,7 +96,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="search.html" pinned="false" current-in-tab="false">
+          <file leaf-file-name="search.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/client/search.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="437">
@@ -152,11 +146,11 @@
         <option value="$PROJECT_DIR$/router.js" />
         <option value="$PROJECT_DIR$/client/search.html" />
         <option value="$PROJECT_DIR$/client/search.css" />
-        <option value="$PROJECT_DIR$/server/main.js" />
         <option value="$PROJECT_DIR$/client/search.js" />
         <option value="$PROJECT_DIR$/client/main.css" />
         <option value="$PROJECT_DIR$/client/main.js" />
         <option value="$PROJECT_DIR$/client/main.html" />
+        <option value="$PROJECT_DIR$/server/main.js" />
       </list>
     </option>
   </component>
@@ -394,7 +388,7 @@
       <workItem from="1481554844794" duration="5659000" />
       <workItem from="1481595913723" duration="1420000" />
       <workItem from="1481714316883" duration="20944000" />
-      <workItem from="1481774120172" duration="29540000" />
+      <workItem from="1481774120172" duration="30256000" />
     </task>
     <task id="LOCAL-00001" summary="css">
       <created>1478706282254</created>
@@ -487,11 +481,18 @@
       <option name="project" value="LOCAL" />
       <updated>1481809729913</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="값에 따라 이미지 변경, 최종">
+      <created>1481821427948</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1481821427948</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="104537000" />
+    <option name="totallyTimeSpent" value="105253000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -567,7 +568,8 @@
     <MESSAGE value="api 값 불러오기 일부 성공(값 출력이 안됨)" />
     <MESSAGE value="하단 바 눌러서 올라올 경우 상세 정보 불러오기 성공" />
     <MESSAGE value="하단 바 눌러서 올라올 경우 상세 정보 불러오기 성공, 도시목록 불러오기 시도 중" />
-    <option name="LAST_COMMIT_MESSAGE" value="하단 바 눌러서 올라올 경우 상세 정보 불러오기 성공, 도시목록 불러오기 시도 중" />
+    <MESSAGE value="값에 따라 이미지 변경, 최종" />
+    <option name="LAST_COMMIT_MESSAGE" value="값에 따라 이미지 변경, 최종" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -935,14 +937,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/search.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="23" column="11" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/infoPage.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
@@ -975,24 +969,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1007">
-          <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="68" selection-start-line="13" selection-start-column="68" selection-end-line="13" selection-end-column="68" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/main.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="494">
@@ -1000,6 +976,32 @@
           <folding>
             <element signature="n#style#0;n#img#0;n#a#0;n#div#2;n#template#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="24" column="3" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/search.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" column="11" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="571">
+          <caret line="35" column="3" selection-start-line="35" selection-start-column="3" selection-end-line="35" selection-end-column="3" />
+          <folding />
         </state>
       </provider>
     </entry>

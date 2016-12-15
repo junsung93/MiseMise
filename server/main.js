@@ -32,9 +32,6 @@ Meteor.methods({
     },
     "getName" : function () {
         return JSON.parse(HTTP.get(miseUrl).content).parm.stationName;
-    },
-    "geta" : function () {
-        return JSON.parse(HTTP.get(miseUrl).content).list[0];
     }
 });
 
